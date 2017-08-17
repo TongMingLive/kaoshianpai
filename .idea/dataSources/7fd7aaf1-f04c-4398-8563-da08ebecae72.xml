@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="express">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="kaoshianpai">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="news"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="sys"/>
+    <schema id="9" parent="1" name="teach"/>
+    <schema id="10" parent="1" name="tour"/>
+    <schema id="11" parent="1" name="zzdx"/>
+    <table id="12" parent="4" name="allusers"/>
+    <table id="13" parent="4" name="jiaoshixinxi"/>
+    <table id="14" parent="4" name="jiaoxuelou"/>
+    <table id="15" parent="4" name="kaoshixinxi"/>
+    <table id="16" parent="4" name="kechengxinxi"/>
+    <table id="17" parent="4" name="suoyoujiaoshi"/>
+    <table id="18" parent="4" name="tiankong"/>
+    <table id="19" parent="4" name="xuanze"/>
+    <table id="20" parent="4" name="xueshengxinxi"/>
+    <table id="21" parent="4" name="yuanxi"/>
+    <table id="22" parent="4" name="zhuanye"/>
+    <column id="23" parent="12" name="ID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="12" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="25" parent="12" name="pwd">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="26" parent="12" name="cx">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="27" parent="12" name="addtime">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="28" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="13" name="ID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="30" parent="13" name="jiaoshibianhao">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="31" parent="13" name="jiaoshixingming">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="32" parent="13" name="xingbie">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="33" parent="13" name="suoshuyuanxi">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="34" parent="13" name="zhicheng">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="35" parent="13" name="shenfenzhenghao">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="36" parent="13" name="mima">
+      <Position>8</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="37" parent="13" name="addtime">
+      <Position>9</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="38" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="39" parent="14" name="ID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="40" parent="14" name="jiaoxuelouhao">
+      <Position>2</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="41" parent="14" name="jiaoxueloumingcheng">
+      <Position>3</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="42" parent="14" name="addtime">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="43" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="15" name="ID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="45" parent="15" name="xuehao">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="46" parent="15" name="xingming">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="47" parent="15" name="xueyuan">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="48" parent="15" name="zhuanye">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="49" parent="15" name="jiaoxuelou">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="50" parent="15" name="jiaoshi">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="51" parent="15" name="kemu">
+      <Position>9</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="52" parent="15" name="shijian">
+      <Position>10</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="53" parent="15" name="adtime">
+      <Position>11</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="54" parent="15" name="louceng">
+      <Position>8</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <key id="55" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="56" parent="16" name="ID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="57" parent="16" name="kechengmingcheng">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="58" parent="16" name="xueshi">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="59" parent="16" name="xuefen">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="60" parent="16" name="leixing">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="61" parent="16" name="beizhu">
+      <Position>6</Position>
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="62" parent="16" name="addtime">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="63" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="64" parent="17" name="ID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="65" parent="17" name="jiaoxuelouhao">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="66" parent="17" name="jiaoxueloumingcheng">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="67" parent="17" name="jiaoshi">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="68" parent="17" name="leixing">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="69" parent="17" name="zhuangtai">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="70" parent="17" name="beizhu">
+      <Position>8</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="71" parent="17" name="daxiao">
+      <Position>9</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="72" parent="17" name="addtime">
+      <Position>10</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="73" parent="17" name="louceng">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="74" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="75" parent="18" name="timuId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="76" parent="18" name="zhuanyemingcheng">
+      <Position>2</Position>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="18" name="timuTitle">
+      <Position>3</Position>
+      <DataType>varchar(500)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="18" name="daan">
+      <Position>4</Position>
+      <DataType>varchar(500)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="79" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>timuId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="80" parent="19" name="timuId">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="81" parent="19" name="zhuanyemingcheng">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="19" name="timuTitle">
+      <Position>3</Position>
+      <DataType>varchar(500)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="19" name="xuanze1">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="84" parent="19" name="xuanze2">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="19" name="xuanze3">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="19" name="xuanze4">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="19" name="daan">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="88" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>timuId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="89" parent="20" name="ID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="90" parent="20" name="xuehao">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="91" parent="20" name="yuanximingcheng">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="92" parent="20" name="xingming">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="93" parent="20" name="xingbie">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="94" parent="20" name="chushengnianyue">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="95" parent="20" name="dianhua">
+      <Position>8</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="96" parent="20" name="jiguan">
+      <Position>14</Position>
+      <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;汉族&apos;</DefaultExpression>
+    </column>
+    <column id="97" parent="20" name="zhaopian">
+      <Position>10</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="98" parent="20" name="shenfenzheng">
+      <Position>11</Position>
+      <DataType>varchar(300)|0</DataType>
+    </column>
+    <column id="99" parent="20" name="mima">
+      <Position>12</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="100" parent="20" name="addtime">
+      <Position>13</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="101" parent="20" name="zhuanyemingcheng">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="102" parent="20" name="youxiang">
+      <Position>9</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="103" parent="20" name="score">
+      <Position>15</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;-1&apos;</DefaultExpression>
+    </column>
+    <key id="104" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="105" parent="21" name="ID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="106" parent="21" name="yuanxihao">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="107" parent="21" name="yuanximingcheng">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="108" parent="21" name="addtime">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="109" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="110" parent="22" name="ID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="111" parent="22" name="yuanximingcheng">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="112" parent="22" name="zhuanyemingcheng">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="113" parent="22" name="addtime">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="114" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
